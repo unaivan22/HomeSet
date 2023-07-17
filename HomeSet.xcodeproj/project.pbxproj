@@ -51,6 +51,7 @@
 		A347CCD22A64D05300000D30 /* HomeSet */ = {
 			isa = PBXGroup;
 			children = (
+				A347CCE12A64D09500000D30 /* View */,
 				A347CCD32A64D05300000D30 /* HomeSetApp.swift */,
 				A347CCD52A64D05300000D30 /* ContentView.swift */,
 				A347CCD72A64D05900000D30 /* Assets.xcassets */,
@@ -65,6 +66,13 @@
 				A347CCDA2A64D05900000D30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A347CCE12A64D09500000D30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
