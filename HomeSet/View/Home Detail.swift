@@ -24,9 +24,9 @@ struct HomeDetail : View {
             .frame(height: geometry.size.height * 0.97)
         }
         
-        VStack{
+        VStack(alignment: .leading){
             
-            HStack{
+            HStack(alignment: .top){
                 Image("unaivan")
                     .resizable()
                     .frame(width: 60.0, height: 60.0)
@@ -47,7 +47,7 @@ struct HomeDetail : View {
                     Text("210 Phelan Ave, San Jose, CA 95112, USA")
                         .font(.system(size: 12))
                 }
-            }
+            }.padding(.bottom, 30)
         }
         
     }

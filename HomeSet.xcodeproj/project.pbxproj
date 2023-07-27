@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A304E1C02A66C4F600B098A9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304E1BF2A66C4F600B098A9 /* Model.swift */; };
+		A304E1C22A66C50400B098A9 /* API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304E1C12A66C50400B098A9 /* API Service.swift */; };
+		A304E1C42A66C73600B098A9 /* Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304E1C32A66C73600B098A9 /* Pairing.swift */; };
 		A347CCD42A64D05300000D30 /* HomeSetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347CCD32A64D05300000D30 /* HomeSetApp.swift */; };
 		A347CCD62A64D05300000D30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347CCD52A64D05300000D30 /* ContentView.swift */; };
 		A347CCD82A64D05900000D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A347CCD72A64D05900000D30 /* Assets.xcassets */; };
 		A347CCDB2A64D05900000D30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A347CCDA2A64D05900000D30 /* Preview Assets.xcassets */; };
+		A392F85C2A6A322400CDC862 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392F85B2A6A322400CDC862 /* Rooms.swift */; };
+		A392F85F2A6A6D4200CDC862 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = A392F85E2A6A6D4200CDC862 /* SwiftUICharts */; };
 		A3F7CA412A64F5C800D91ADA /* Device Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7CA402A64F5C800D91ADA /* Device Detail.swift */; };
 		A3F7CA432A65003200D91ADA /* Home Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7CA422A65003200D91ADA /* Home Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A304E1BF2A66C4F600B098A9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A304E1C12A66C50400B098A9 /* API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Service.swift"; sourceTree = "<group>"; };
+		A304E1C32A66C73600B098A9 /* Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pairing.swift; sourceTree = "<group>"; };
 		A347CCD02A64D05300000D30 /* HomeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A347CCD32A64D05300000D30 /* HomeSetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSetApp.swift; sourceTree = "<group>"; };
 		A347CCD52A64D05300000D30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A347CCD72A64D05900000D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A347CCDA2A64D05900000D30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A392F85B2A6A322400CDC862 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 		A3F7CA402A64F5C800D91ADA /* Device Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Detail.swift"; sourceTree = "<group>"; };
 		A3F7CA422A65003200D91ADA /* Home Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Detail.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,12 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A392F85F2A6A6D4200CDC862 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A304E1BD2A66C4DA00B098A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A304E1BF2A66C4F600B098A9 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A304E1BE2A66C4E300B098A9 /* Web Service */ = {
+			isa = PBXGroup;
+			children = (
+				A304E1C12A66C50400B098A9 /* API Service.swift */,
+			);
+			path = "Web Service";
+			sourceTree = "<group>";
+		};
 		A347CCC72A64D05300000D30 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +81,8 @@
 		A347CCD22A64D05300000D30 /* HomeSet */ = {
 			isa = PBXGroup;
 			children = (
+				A304E1BE2A66C4E300B098A9 /* Web Service */,
+				A304E1BD2A66C4DA00B098A9 /* Model */,
 				A347CCE12A64D09500000D30 /* View */,
 				A347CCD32A64D05300000D30 /* HomeSetApp.swift */,
 				A347CCD52A64D05300000D30 /* ContentView.swift */,
@@ -77,6 +105,8 @@
 			children = (
 				A3F7CA402A64F5C800D91ADA /* Device Detail.swift */,
 				A3F7CA422A65003200D91ADA /* Home Detail.swift */,
+				A304E1C32A66C73600B098A9 /* Pairing.swift */,
+				A392F85B2A6A322400CDC862 /* Rooms.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +127,9 @@
 			dependencies = (
 			);
 			name = HomeSet;
+			packageProductDependencies = (
+				A392F85E2A6A6D4200CDC862 /* SwiftUICharts */,
+			);
 			productName = HomeSet;
 			productReference = A347CCD02A64D05300000D30 /* HomeSet.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +158,9 @@
 				Base,
 			);
 			mainGroup = A347CCC72A64D05300000D30;
+			packageReferences = (
+				A392F85D2A6A6D4100CDC862 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = A347CCD12A64D05300000D30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A304E1C02A66C4F600B098A9 /* Model.swift in Sources */,
 				A3F7CA432A65003200D91ADA /* Home Detail.swift in Sources */,
 				A347CCD62A64D05300000D30 /* ContentView.swift in Sources */,
+				A304E1C22A66C50400B098A9 /* API Service.swift in Sources */,
 				A347CCD42A64D05300000D30 /* HomeSetApp.swift in Sources */,
+				A304E1C42A66C73600B098A9 /* Pairing.swift in Sources */,
+				A392F85C2A6A322400CDC862 /* Rooms.swift in Sources */,
 				A3F7CA412A64F5C800D91ADA /* Device Detail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A392F85D2A6A6D4100CDC862 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A392F85E2A6A6D4200CDC862 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A392F85D2A6A6D4100CDC862 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A347CCC82A64D05300000D30 /* Project object */;
 }
